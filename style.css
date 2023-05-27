@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;1,700&display=swap');
+
+*{
+    font-family: 'Work Sans';
+    box-sizing: border-box ;
+
+  }
+#listaF {
+    margin: 10px;
+    border-collapse: collapse;
+  }
+
+  #listaF th,
+  #listaF td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+
+  #listaF thead tr:first-child {
+    background-color:rgba(102, 51, 153, 0.667);
+    font-weight: bold;
+  }
+
+  #listaP {
+    margin: 10px;
+    border-collapse: collapse;
+  }
+
+  #listaP th,
+  #listaP td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+
+  #listaP thead tr:first-child {
+    background-color:rgba(102, 51, 153, 0.667);
+    font-weight: bold;
+  }
+
+  .form {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 3.125em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);
+  }
+  
+  .signup {
+    color: rgb(77, 75, 75);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 0.5em;
+  }
+  
+  .form--input {
+    width: 100%;
+    margin-bottom: 1.25em;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 0.8em;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+  }
+  
+  .form--input:focus {
+    border: 1px solid #639;
+    outline: none;
+  }
+  
+  .form--submit {
+    width: 50%;
+    padding: 0.625em;
+    border-radius: 5px;
+    color: white;
+    background-color: #639;
+    border: 1px dashed #639;
+    cursor: pointer;
+  }
+  
+  .form--submit:hover {
+    color: #639;
+    background-color: white;
+    border: 1px dashed #639;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .title{
+    color: #639;
+    font-size: 20px;
+    font-weight: bold;
+}
+.butt {
+    margin: 5px;
+    border: 1.5px solid #639;
+    cursor: pointer;
+    padding: 15px 25px;
+    border-radius: 15px;
+    color: #639;
+    z-index: 1;
+    background:rgba(255, 255, 255, 0.771);
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   .butt:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color:#639;
+    z-index: -1;
+    transition: all 250ms
+   }
+   
+   .butt:hover {
+    border: none;
+    transition: 0.5s;
+    color:rgb(255, 255, 255);
+   }
+
+   .butt:hover:before {
+    transition: 0.5s;
+    width: 100%;
+   }

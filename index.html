@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+        <form class="form" action="" onsubmit="return false;" id="formulario">
+                <span class="signup">Ingreso de Productos</span>
+    
+                <input  placeholder="Nombre"  id="nombre" class="form--input"><br>
+
+                <input  placeholder="Descripcion" id="descripcion" class="form--input"><br>
+
+                <input  placeholder="Cantidad" id="cantidad" class="form--input"><br>
+
+                <input placeholder="Precio" id="precio" class="form--input"><br>
+
+                <input  placeholder="Fecha de entrega" id="fechaEntrega" class="form--input"><br>
+
+                <input  placeholder="cliente" id="cliente" class="form--input"><br>
+                <br>
+                <select id="select" class="form--input"><br>
+                    <option value= '1' >Facturado</option>
+                    <option value= '2' >Pendiente</option>
+                  </select>
+
+               
+                <button onclick="Registro()" class="form--submit" >Ingresar</button> <br>
+              </form><br>
+            
+    <div class="listaP"> 
+       <p class="title">PENDIENTES:</p>
+        <table id="listaP">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+         <button class="butt" onclick="listarPend()" > <span class="button_top">
+           LISTAR PENDIENTES
+        </span> </button>
+    </div>
+
+    <div class="listaF"> 
+       <p class="title">FACTURADOS:</p>
+      
+        <table id="listaF">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <button class="butt" onclick="listarFact()" ><span class="button_top">
+            LISTAR FACTURADOS
+         </span> </button></button>
+
+    </div>
+ 
+
+    <div class="title">
+        <br>
+        <button class="butt" onclick="total()">
+          <span class="button_top">
+            SUMAR TOTAL
+         </span> 
+        </button>
+        <p id="total"></p>
+    </div>
+
+    <script src="Practica.js"></script>
+</body>
+</html>
